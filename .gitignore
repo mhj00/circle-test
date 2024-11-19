@@ -1,0 +1,20 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int n, int k) {
+    int answer = 0;
+    
+    int lamb_skewers =12000;
+    int drink =2000;
+    
+    answer= lamb_skewers * n; //양꼬치 가격
+    
+    int free_drink = n/10;
+    int add_drink= k-free_drink;
+    
+    answer +=drink*add_drink;
+      
+    return answer;
+}
